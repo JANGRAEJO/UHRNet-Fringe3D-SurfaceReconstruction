@@ -52,7 +52,7 @@ The GIF below presents five synchronized visualizations for each sample in a sin
 | Input Fringe Pattern | Ground Truth Height Map | Predicted Height Map |
 |----------------------|-------------------------|-----------------------|
 | Ground Truth 3D Surface | Predicted 3D Surface |
-|--------------------------|-----------------------|
+
 
 ![Visualization Demo](combined_visualization.gif)
 
