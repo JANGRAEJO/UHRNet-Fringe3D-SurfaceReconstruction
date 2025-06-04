@@ -10,6 +10,8 @@ This approach is particularly useful in **optical metrology** and **non-contact 
 
 Our model provides a direct, end-to-end solution for **interpreting single fringe images** and reconstructing corresponding 3D height maps, enabling fast and scalable inspection pipelines in **precision manufacturing**, **semiconductor metrology**, and **optical surface analysis**.
 
+![Visualization Demo](combined_visualization_part_00)
+
 ## 📌 Project Summary
 
 This project aims to train a deep neural network to interpret interference fringe patterns and output corresponding surface height maps, enabling **non-contact, high-resolution surface measurement** at micrometer-level precision. This is a crucial step for building practical tools in optics and precision manufacturing systems.
@@ -55,7 +57,6 @@ The GIF below presents five synchronized visualizations for each sample in a sin
 
 
 ![Visualization Demo](combined_visualization_part_00)
-![Visualization Demo](combined_visualization_part_01)
 
 **Descriptions:**
 
