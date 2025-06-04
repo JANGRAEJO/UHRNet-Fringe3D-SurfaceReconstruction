@@ -45,32 +45,24 @@ The dataset includes:
   - Predicted Height Map
 - ✅ Optional 3D surface plot generation using `matplotlib`
 
-## 🎯 Purpose
+### 🖼️ Understanding the Demo Output
 
-This work serves as the foundation for an optical measurement system I'm developing that:
-- Uses fringe patterns captured by lenses (e.g., Michelson Interferometer)
-- Applies deep learning to **interpret optical data without complex phase-unwrapping or classical algorithms**
-- Enables **precise surface flatness inspection** in real time
+The GIF below presents five synchronized visualizations for each sample in a single frame:
 
-### 🗆 Understanding the Demo Output
+| Input Fringe Pattern | Ground Truth Height Map | Predicted Height Map | Ground Truth 3D Surface | Predicted 3D Surface |
+|----------------------|-------------------------|-----------------------|--------------------------|-----------------------|
 
-The visualization below shows three side-by-side images for each sample:
+![Visualization Demo](output_vis/combined_visualization.gif)
 
-| Input | Ground Truth | Prediction |
-|:--:|:--:|:--:|
-| !(output_vis/vis_00.png)|
+**Descriptions:**
 
-- **Input Fringe Pattern**: The grayscale structured-light image captured from a projector-camera system. It contains subtle intensity changes based on the object’s surface shape.
-- **Ground Truth Height Map**: The real 3D shape (height in mm or scaled units) of the object, used for supervision during training. This is usually obtained using an accurate 3D scanning method.
-- **Predicted Height Map**: The output from our UHRNet model. It attempts to reconstruct the object’s depth based only on the single fringe image.
+- **Input Fringe Pattern**: A grayscale structured-light image encoding subtle surface deformations.
+- **Ground Truth Height Map**: The reference 3D surface (in mm or scaled units), obtained from high-precision scanning.
+- **Predicted Height Map**: Depth output from the trained UHRNet model, inferred from just the fringe image.
+- **Ground Truth 3D Surface**: A rendered surface plot of the actual height map for visual validation.
+- **Predicted 3D Surface**: A 3D plot of the model’s prediction, enabling intuitive comparison with the true shape.
 
-> Color maps: Red/Yellow = High surface, Blue = Low surface.
-
----
-
-### 🎮 Demo GIF
-
-![Visualization Demo](output_vis/visualization_result.gif)
+> **Color Map Interpretation**: Red/Yellow = High surface regions, Blue = Low surface regions.
 
 ## 📊 Inference & Output
 
