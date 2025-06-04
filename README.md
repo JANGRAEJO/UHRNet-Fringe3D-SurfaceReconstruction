@@ -16,6 +16,23 @@ Our model provides a direct, end-to-end solution for **interpreting single fring
 
 This project aims to train a deep neural network to interpret interference fringe patterns and output corresponding surface height maps, enabling **non-contact, high-resolution surface measurement** at micrometer-level precision. This is a crucial step for building practical tools in optics and precision manufacturing systems.
 
+## 🧾 Acknowledgments & Base Implementation
+
+This repository is a **PyTorch re-implementation and extension** of the original UHRNet method proposed by Huang et al. (2023):
+
+- **Original Paper**: [A deep-learning method for fringe pattern analysis with UHRNet](https://doi.org/10.1364/OE.485239)
+- **Original Code Repository**: [https://github.com/fead1/UHRNet](https://github.com/fead1/UHRNet)
+
+The core model architecture and dataset structure are based on the original codebase. However, this repository includes substantial modifications and improvements, including:
+
+- Full dataset training support (beyond original 128-image example)
+- Batch inference and visualization utilities
+- Optional 3D surface rendering for predicted outputs
+- Compatibility with PyTorch ≥1.12 and updated dependency handling
+- All code and training procedures were developed and tested outside China
+
+> This work is an adaptation and extension. All intellectual credit for the original algorithm and dataset belongs to the original authors.
+
 ## 📁 Dataset
 
 The original dataset used in this project is sourced from the supplementary materials of the paper:
