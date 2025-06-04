@@ -49,10 +49,12 @@ The dataset includes:
 
 The GIF below presents five synchronized visualizations for each sample in a single frame:
 
-| Input Fringe Pattern | Ground Truth Height Map | Predicted Height Map | Ground Truth 3D Surface | Predicted 3D Surface |
-|----------------------|-------------------------|-----------------------|--------------------------|-----------------------|
+| Input Fringe Pattern | Ground Truth Height Map | Predicted Height Map |
+|----------------------|-------------------------|-----------------------|
+| Ground Truth 3D Surface | Predicted 3D Surface |
+|--------------------------|-----------------------|
 
-![Visualization Demo](output_vis/combined_visualization.gif)
+![Visualization Demo](combined_visualization.gif)
 
 **Descriptions:**
 
